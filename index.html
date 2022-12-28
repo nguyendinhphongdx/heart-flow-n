@@ -1,0 +1,65 @@
+<! DOCTYPE htm>
+<html>
+  <head>
+    <title> FOR MY SISTER</title>
+    <link rel=" stylesheet" type="text/css" href="style.css">
+    <style>
+      body{
+  magrin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b1522;
+  
+}
+.heart{
+ height: 70px;
+ width: 70px;
+  background: #7FFFD4;
+  position: relative;
+  transform: rotate(-45deg);
+  box-shadow: -10px 10px 90px #7FFFD4;
+  animation: heart 0.6s linear infinite;
+}
+@keyframes heart{
+  0%{
+    transform: rotate(-45deg) scale(1.07);
+  }
+  80{
+    transform: rotate(-45deg) scale(1.0);
+  }
+  100%{
+    transform: rotate(-45deg) scale(0.8);
+  }
+}
+.heart:before{
+  content: '';
+  position: absolute;
+  height: 70px;
+ width: 70px;
+  background: #7FFFD4;
+  top:-50%;
+  border-radius: 50px;
+  box-shadow: -10px -10px 90px #7FFFD4;
+}
+.heart:after{
+  content: '';
+  position: absolute;
+  height: 70px;
+ width: 70px;
+  background: #7FFFD4;
+  right:-50%;
+  border-radius: 50px;
+ box-shadow: 10px 10px 90px #7FFFD4; 
+  }
+
+    </style>
+  </head>
+  <body>
+    <script src="./js"></script>
+    <div class="heart"></div>
+    
+  </body>
+</html>
