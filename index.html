@@ -1,65 +1,101 @@
 <! DOCTYPE htm>
-<html>
+  <html>
+
   <head>
     <title>For You</title>
     <link rel=" stylesheet" type="text/css" href="style.css">
     <style>
-      body{
-  magrin: 0;
-  padding: 0;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #0b1522;
-  
-}
-.heart{
- height: 70px;
- width: 70px;
-  background: #7FFFD4;
-  position: relative;
-  transform: rotate(-45deg);
-  box-shadow: -10px 10px 90px #7FFFD4;
-  animation: heart 0.6s linear infinite;
-}
-@keyframes heart{
-  0%{
-    transform: rotate(-45deg) scale(1.07);
-  }
-  80{
-    transform: rotate(-45deg) scale(1.0);
-  }
-  100%{
-    transform: rotate(-45deg) scale(0.8);
-  }
-}
-.heart:before{
-  content: '';
-  position: absolute;
-  height: 70px;
- width: 70px;
-  background: #7FFFD4;
-  top:-50%;
-  border-radius: 50px;
-  box-shadow: -10px -10px 90px #7FFFD4;
-}
-.heart:after{
-  content: '';
-  position: absolute;
-  height: 70px;
- width: 70px;
-  background: #7FFFD4;
-  right:-50%;
-  border-radius: 50px;
- box-shadow: 10px 10px 90px #7FFFD4; 
-  }
+      body {
+        magrin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0b1522;
 
+      }
+
+      .heart {
+        height: 70px;
+        width: 70px;
+        background: #7FFFD4;
+        position: relative;
+        transform: rotate(-45deg);
+        box-shadow: -10px 10px 90px #7FFFD4;
+        animation: heart 0.6s linear infinite;
+      }
+
+      p {
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        text-align: center;
+        width: 100%;
+        transform: rotate(45deg);
+        z-index: 100;
+        font-family: monospace;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      .neonText {
+        color: #8956d4;
+        text-shadow:
+          0 0 7px #75898f,
+          0 0 10px #e97e7e,
+          0 0 21px #f2e6ff,
+          0 0 42px rgb(192, 150, 88),
+          0 0 82px rgb(58, 209, 159),
+          0 0 92px rgb(111, 71, 145),
+          0 0 102px rgb(186, 61, 197),
+          0 0 151px rgb(128, 39, 155);
+      }
+
+      @keyframes heart {
+        0% {
+          transform: rotate(-45deg) scale(1.07);
+        }
+
+        80 {
+          transform: rotate(-45deg) scale(1.0);
+        }
+
+        100% {
+          transform: rotate(-45deg) scale(0.8);
+        }
+      }
+
+      .heart:before {
+        content: '';
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        background: #7FFFD4;
+        top: -50%;
+        border-radius: 50px;
+        box-shadow: -10px -10px 90px #7FFFD4;
+      }
+
+      .heart:after {
+        content: '';
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        background: #7FFFD4;
+        right: -50%;
+        border-radius: 50px;
+        box-shadow: 10px 10px 90px #7FFFD4;
+      }
     </style>
   </head>
+
   <body>
-    <script src="./js"></script>
-    <div class="heart"></div>
-    
+    <!-- <script src="./js"></script> -->
+    <div class="heart">
+      <p class="neonText">Nhung ♥️</p>
+    </div>
+
   </body>
-</html>
+
+  </html>
